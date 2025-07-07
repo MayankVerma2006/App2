@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadi.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c842d29d1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Shadi Karva Lo Guys</p>
+                <h1>Hi, I'm <span>CHIKU</span><br>Nitika From India</h1>
+            </div>
+        </div>
+    </div>
+ <!-----------About---------->-
+<div id="about">\
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG-20241104-WA0006.jpg" >
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>I Am Bestu of Mayank verma.He is very Handsome,Cute,intelligence And good looking And a real gentlemen .</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab"  id="skills">
+                    <ul>
+                        <li><span>Normal pack </span><br>Fee-$50</li>
+                        <li><span>Special Pack </span><br>Fee-$80</li>
+                        <li><span>Premium Pack</span><br>Fee-$100</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"  id ="Experience">
+                    <ul>
+                        <li><span>Different age group </span><br>Kasa Patner chihya</li>
+                        <li><span>18-22</span><br>Smart+handsome+intellegence</li>
+                        <li><span>23-28</span><br>Smart+handsome</li>
+                        <li><span>29-35</span><br>Smart+intellegence</li>
+                        <li><span>above</span><br>Bhai Ab tu Randva Rhva ga </li>
+                    </ul>
+                </div>
+               
+            </div>       
+      </div>
+   </div>
+</div>
+<!-------------services-------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+             <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Boys</h2>
+                <p>Like Sigma and Alpha(handsome ,cute and powerful)</p>
+                    <a href="#">Learn more</a>
+             </div>
+             <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Girls</h2>
+                <p>Cute,beautiful And attitude vali like you.</p>
+                    <a href="#">Learn more</a>
+             </div>
+             <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Besti And Bestu</h2>
+                <p>Romantic ,Naughty,Double meaning</p>
+                    <a href="#">Learn more</a>
+             </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <a href="#"class="btn">See More</a>
+    </div>
+</div>
+<!---------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> nitikahooda420@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 982787******</p>
+                 <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                 </div>
+                 <a href="images/cv.html"  download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name"placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email required">
+                    <textarea name="Messsage" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Mayank.Made with <i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.claslist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.claslist.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classlist.add("active-tab")
+    }
+
+
+</script>
+
+<script>
+
+     var sidemenu = document.getElementById("sidemenu");
+
+     function openmenu(){
+        sidemenu.style.right = "0";
+     }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/
+    AKfycbzGo6SF9YZeIjWeXS2wdR98V8WQEBUUruAIyPfqvYy4rz7UK9dpUrV05Blb0oWNY5YSPg/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = Document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>
+</body>
